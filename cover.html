@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizzot</title>
+    <title>Zot Racer</title>
     <link type="text/css" rel="stylesheet" href="./cover.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <!--
     <style>
         body {
             background-image: url('https://t3.ftcdn.net/jpg/02/06/46/22/240_F_206462231_DUzD9soaRYZEntLyo5mRRPzCRqhAgITj.jpg');
@@ -19,19 +20,50 @@
             background-size: 100%;
           }
         </style>
+    -->
+        <script src="./cover.js"></script>
 </head>
 
 <body>
     <!--h1>PLAY</h1-->
-    <h1 class= "title">Welcome to Quizzot!</h1>
-    <center>
-        <button class="cover_button">PLAY</button>
-    </center>
-    <ul>
-        <li>class1</li>
-        <li>class2</li>
-    </ul>
-    <!--comment-->
+    <div id="section1">
+        <h1 class= "title">Welcome to Zot Racer!</h1>
+        <div class="clouds">
+            <div class="cloud"></div>
+            <button class="cover_button" onclick="create_link()"><span>PLAY</span></button>
+            <div class="cloud"></div>
+        </div>
+
+        <h2>Choose a set to study:</h2>
+        <div class="centerplay marginbutton">
+            <!--choose set-->
+            <button class="setbutton" id="I&CSCI31" onclick="set_chosen(id)">ICS31</button>
+            <button class="setbutton" id="I&CSCI32" onclick="set_chosen(id)">ICS32</button>
+            <button class="setbutton" id="I&CSCI33" onclick="set_chosen(id)">ICS33</button>
+        </div>
+        <div class="centerplay">
+            <button class= "sectionbutton" id='zotracerinfo'onclick="window.location.href='#section2'">What is Zot Racer?</button>
+        </div>
+    </div>
+
+    <div id="section2">
+        <h1 class="title">About Zot Racer</h1>
+        <p>
+            Finals suck huh? Studying is tedious and during the final weeks of the quarter, we are completely drained of all 
+            our motivation. Instead of paying attention during class, you are sit in the back of the lecture hall, hood up,
+            playing type racer with your friends to stay awake. I'm sure someone can relate haha. Rather than wasting time and
+            losing brain cells mindlessly typing, you can play our game Zot Racer instead! 
+
+            Zot Racer revamps studying and motivates students to finish the quarter strong. In the game, you, the lovely Anteater, are placed
+            head to head to our favorite Starship Zotbot! To play, first select a set of practice questions Much like Type Racer, your avatar advances with each correct answer. For some friendly
+            competition, try to 
+        </p>
+        <div class="centerplay">
+            <button class= "sectionbutton" id="playbutton" onclick="window.location.href='#section1'">Let's Play!</button>
+        </div>    
+    </div>
+
+    
 
 </body>
 </html>

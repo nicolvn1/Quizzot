@@ -1,0 +1,22 @@
+.zotbotimage {
+    height:150px;
+    display:block;
+    transition: transform 1000ms;
+  }
+
+.petrimage {
+  height:100px;
+  display:block;
+  transition: transform 1000ms 300ms;
+}
+
+#road{
+  height: 450px;
+  background-image: url('images/road_to_race_cropped.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: -webkit-sticky;
+  margin-top: 20px;
+  padding: 10;
+}
+
