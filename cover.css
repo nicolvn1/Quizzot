@@ -1,8 +1,10 @@
 .cover_button {
+    font: ducimain, helvectica;
+    font-weight: bold; 
     margin-top: 80px;
     font-size: 75px;
     border-radius: 50px;
-    background-color: #b8e4bc; /* b8e4bc */
+    background-color: #b8e4bc; 
     border: none;
     color: white;
     padding: 30px 300px;
@@ -46,7 +48,7 @@
     margin: 10px;
     font-size: 20px;
     border-radius: 15px;
-    background-color: #cce5e7; /* rgb(214, 235, 221) */
+    background-color: #498cb2;
     border: none;
     color: white;
     padding: 15px 50px;
@@ -54,26 +56,28 @@
     display: inline-block;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     vertical-align:center;
+    font-family: 'Chewy', cursive;
     z-index: 3;
 }
 
 #select_course {
+    font: ducimain, helvectica;
+    font-weight: bold; 
     text-align: center;
 }
 
 #course_info {
     font: 14px arial, sans-serif;
-   
 }
 
-    
+
 
 .title {
     padding-top: 50px;
     text-align:center;
     font-size: 50px;
     font-family: 'Chewy', cursive;
-    color: #705a0f
+    color: #436436
 }
 
 
@@ -124,7 +128,7 @@ border-radius:100px;
 }
 
 #section2{
-    height:800px;
+    height:1100px;
     background-color: beige;
 }
 
@@ -133,9 +137,11 @@ html{
 }
 
 .sectionbutton{
+    font-family: 'Chewy', cursive;
+    font-weight: bold; 
     font-size: 30px;
     border-radius: 50px;
-    background-color: #b1da6c; /* Green */
+    background-color: #b1da6c;
     border: none;
     color: white;
     padding: 20px 100px;
@@ -158,6 +164,8 @@ html{
 
 
 #zotracerinfo{
+    font: ducimain, helvectica;
+    font-weight: bold; 
     position: absolute;
     bottom:0;
 }
@@ -174,22 +182,26 @@ html{
 
 #hook {
     text-align: center;
+    font: ducimain, helvectica;
+    font-weight: bold; 
+    font-size: 25px;
+    color: white;
     margin: auto;
-    width: 1000px;
+    width: 1200px;
     border-radius: 20px;
     padding: 10px;
-    background-color: rgb(193, 219, 221); /* rgb(214, 235, 221) */
+    background-color: rgb(188, 219, 165); 
 }
 
 #about_info {
     text-align: center;
+    font: ducimain, helvectica;
+    font-weight: bold; 
+    font-size: 25px;
+    color: white;
     margin: auto;
-    width: 1000px;
+    width: 1200px;
     border-radius: 20px;
     padding: 10px;
-    background-color: rgb(193, 219, 221); /* rgb(214, 235, 221) */
+    background-color: rgb(174, 205, 231);
 }
-
-#orange{
-    color: orange;
-  }

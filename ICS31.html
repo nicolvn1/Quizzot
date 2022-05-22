@@ -11,30 +11,25 @@
 
     </script>
 
-    <p class="ICS31title">ICS 31</p>
-
 </head>
 
 <div id="road">
-    <p class="comp">Computer</p>
+    <p class="ICS31title">ICS 31</p>
+    <br></br>
     <img class="zotbotimage" id="zotbot" src="https://media3.giphy.com/media/bEI4GYY8LhXmvgdqrG/giphy.gif?cid=790b7611289a866a4a2a5c89d0d4f8d7199a39c0004350a3&rid=giphy.gif&ct=s" alt="cutezotbot">
     <br></br>
-    <p class="you">You</p>
     <img class="petrimage" id="petr" src="https://media1.giphy.com/media/5tmoOq5qTgK4U4BT7l/source.gif" alt="cutepetr">
 </div>
 
 <div id="bottom">
-    <br></br>
-    <div id="start_button">
-        <button class="startbutton" onclick="start_to_next_question(); computer_move()">Start</button>
+    <div class = "button_holder">
+        <div id="start_button">
+            <button class="startbutton" onclick="start_to_next_question(); computer_move()">Start</button>
+        </div>
+        <div class="checker" id="check">...</div>
+        <button id="home_button" onclick="location.href='cover.html'"><span>Home</span></button>
     </div>
+    <div class="question_section" id="questions">Questions will appear here.</div>
     <br></br>
-    <div id="questions">Questions will appear here.</div>
-    <br></br>
-    <div id="check">...</div>
 </div>
-
-<br></br>
-<button onclick="location.href='cover.html'"><span>Home</span></button>
-
 </html>

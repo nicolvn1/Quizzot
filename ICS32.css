@@ -1,0 +1,130 @@
+.ICS32title {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Chewy', cursive;
+    font-weight: bold;
+    color: #705a0f
+  }
+  
+  .zotbotimage {
+      height:110px;
+      display:block;
+      transition: transform 1000ms;
+      position: absolute;
+      bottom: 35%;
+    }
+  
+  .petrimage {
+    height:70px;
+    display:block;
+    transition: transform 1000ms 300ms;
+    transition: transform 1000ms;
+    position: absolute;
+    bottom: 10%;
+  }
+  
+  
+  .checker {
+    padding-left: 20px;
+    padding-top: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Chewy', cursive;
+    color: #705a0f
+  }
+  
+  #road{
+    height: 30vw;
+    width: 100vw;
+    background-image: url('images/New_field.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  #bottom {
+    height:600px;
+    background-color: beige;
+  }
+  
+  body {
+    cursor: url(images/smallanteatercursor\ .png), pointer;
+  }
+  
+  .question_section {
+    text-align: center;
+    font: ducimain, helvectica;
+    font-weight: bold; 
+    font-size: 15px;
+    color: white;
+    margin: auto;
+    width: 1200px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #acac98; /* rgb(214, 235, 221) */
+  }
+  
+  .answer_buttons {
+    margin-top: 5px;
+    margin: 5px;
+    font-size: 10px;
+    border-radius: 15px;
+    background-color: rgb(245, 245, 220); /* rgb(214, 235, 221) */
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    vertical-align:center;
+  }
+  
+  .answer_buttons:hover {
+    background-color: #ffffff
+  }
+  
+  .button_holder {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+  }
+  
+  #home_button {
+      margin-top: 5px;
+      margin: 10px;
+      font: ducimain, helvectica;
+      font-size: 15px;
+      border-radius: 15px;
+      background-color: #498cb2; 
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      display: inline-block;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      z-index: 3;
+  }
+  
+  #home_button:hover {
+    background-color: #dad472
+  }
+  
+  .startbutton {
+    margin-top: 5px;
+    margin: 10px;
+    font: ducimain, helvectica;
+    font-size: 15px;
+    border-radius: 15px;
+    background-color: #498cb2; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+  .startbutton:hover {
+    background-color: #dad472
+  }

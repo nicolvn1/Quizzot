@@ -1,109 +1,209 @@
-const set3Questions = [
+const ICS33_questions = [
     {
-      question: "?",
+      question: `Which expanded code is equivalent to this one-liner:
+      <br></br>
+      dictionary = {'a':1,'b':2,'c':3, 'd':0}
+      <br></br>
+      one_liner = [key for key in dictionary if dictionary[key] % 2 == 0]`,
       answers: {
-        a: ".",
-        b: ".c",
-        c: ".",
-        d: "It's decorates the programmer's terminal.",
+        a: `one_liner =[]
+        <br></br>
+        for key in dictionary:
+        <br></br>
+        one_liner.append(key)
+        `,
+        b: `one_liner =[]
+        <br></br>
+        for key in dictionary:
+        <br></br>
+        if dictionary[key] % 2 == 0:
+        <br></br>
+        one_liner.append(key)c
+        `,
+        c: `one_liner =[]
+        <br></br>
+        if dictionary.keys() % 2 == 0:
+        <br></br>
+        for key in dictionary:
+        <br></br>
+        one_liner.append(key)
+        `,
+        d: `one_liner =[]
+        <br></br>
+        for key in dictionary.key:
+        <br></br>
+        if dictionary[key] % 2 == 0:
+        <br></br>
+        one_liner.append(key)
+        `,
       },
       correctAnswer: "b"
     },
     {
-      question: "When is the finally block executed during a try/except?",
+      question: "What is the difference between an iterator and an iterable?",
       answers: {
-        a: "It executes when testing certain lines of code.",
-        b: "It executes if an error occured when testing certain lines of code.",
-        c: "It executes regardless of whether code ran successfully or not.c",
-        d: "It executes if an error didn't occur when running code."
+        a: "An iterable is an object you can call next() on and an iterator is an object that can be iterated over",
+        b: "An iterator returns an iterable while an iterable returns a generator",
+        c: "An iterator is an object you can call next() on and an iterable is an object that can be iterated overc",
+        d: "An iterator returns a generator while an iterator returns an interable"
       },
       correctAnswer: "c"
     },
     {
-      question: "What does a Class do?",
+      question: `Which email will NOT match the regular expresion?
+      <br></br>
+      r"^(\w)+@(\w)+.(com|net|org|edu)$"`,
       answers: {
-        a: "Create an instance.",
-        b: "Defines methods and attributes that can be used in that Class",
-        c: "Creates an outline for creating an object.",
-        d: "All of the Above.c"
+        a: "p_anteater@sbcglobal.net",
+        b: "panteater@hotmail.com",
+        c: "pant3at3r@gmail.com",
+        d: "panteater@uciedu.c"
       },
       correctAnswer: "d"
     },
     {
-      question: "What is the namespace precedence order?",
+      question: "How would you access the value 3 on in the following linked list? X = LN(1) --> LN(2) --> LN(3) --> LN(4) --> LN(5)",
       answers: {
-        a: "local --> built-in --> enclosed --> global",
-        b: "built-in --> enclosed --> local --> global",
-        c: "local --> enclosed --> global --> built-inc",
-        d: "local --> global --> enclosed --> build-in"
+        a: "x.next",
+        b: "x.next()",
+        c: "x.next.nextc",
+        d: "x.next.next()"
       },
       correctAnswer: "c"
     },
     {
-      question: `What is the order of HTTP request and response?
-        1.Server accepts connection, 2.Server responds with content, 
-        3. Clinet sends request, 4. Client establish connection with server`,
+      question: "What does FEOOP stand for?",
       answers: {
-        a: "1,2,4,3",
-        b: "2,1,3,4",
-        c: "4,1,3,2c",
-        d: "4,3,2,1"
+        a: "Famous Elephants Of Oakdale Pennsylvania",
+        b: "Forestry Education Observation-Outreach Program",
+        c: "Fundamental Equation of Object-Oriented Programmingc",
+        d: "Fail Everyone Out of Physics"
       },
       correctAnswer: "c"
     },
     {
-      question: "What happens in a recursive function?",
+      question: "Which term is not included in LEGB ?",
       answers: {
-        a: "A function call results in another call to the same function.c",
-        b: "A function call results in another call to a different function.",
-        c: "A function call executes the code once and returns.",
-        d: "A function call returns a reference to the inner function"
+        a: "Local",
+        b: "Errors.c",
+        c: "Global",
+        d: "Built-ins"
       },
-      correctAnswer: "a"
+      correctAnswer: "c"
     },
     {
-      question: "What is a class called when it inherits from another class?",
+      question: "What method(s) does/do a class object need if it wants to be used by a context manager?",
       answers: {
-        a: "Base class",
-        b: "Child classc",
-        c: "Parent class",
-        d: "Daughter class"
+        a: "__start__ and __exit__",
+        b: "__enter__ and __exit__c",
+        c: "__start__ and __finish__",
+        d: "__enter__ and __finish__"
       },
       correctAnswer: "b"
     },
     {
-      question: `Which class is the base class?
-      class Base: pass
-      class Base1(Base): pass
-      class Base2(Base, Base1): pass`,
+      question: "If the method call 1 < x fails, python would try to execute which of the following?",
       answers: {
-        a: "Base1",
-        b: "Base1 and Base2.",
-        c: "Base2",
-        d: "Basec"
+        a: "type(1).__le__(1,x)",
+        b: "type(1).__ge__(1,x)",
+        c: "type(x).__le__(x,1)",
+        d: "type(x).__ge__(x,1)c"
       },
       correctAnswer: "d"
     },
     {
-      question: "What is method overloading?",
+      question: "What does any(()) evaluates to?",
       answers: {
-        a: `Replacing the functionality of a method defined in the child class 
-        with the definition from the base class`,
-        b: `Replacing the functionality of the method with the same definition
-         from the parent class in the child classc`,
-        c: "Defining a new method with a different name in the child class",
-        d: "Defining a new method in the base class"
+        a: "True",
+        b: "Falsec",
+        c: "Both a and b",
+        d: "None of the above"
       },
       correctAnswer: "b"
     },
     {
-      question: "?",
+      question: "What are Pattis' pet peeve(s)?",
       answers: {
-        a: "10.c",
-        b: "10.",
-        c: "10.",
-        d: "10."
+        a: "People still talking after class has begun.",
+        b: "Thornton's pronunciation of Tkinter.",
+        c: "Phones ringing during class.",
+        d: "All of the above.c"
       },
-      correctAnswer: "a"
+      correctAnswer: "d"
     }
   ];
+
+
+  const indentString = (str, count, indent = ' ') =>
+  str.replace(/^/gm, indent.repeat(count));
+
+var available_inds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+function next_question() {
+  return available_inds[Math.floor(Math.random() * available_inds.length)];
+}
+
+function answer_button(current_question_num, user_answer) {
+  if (ICS33_questions[current_question_num].correctAnswer == user_answer) {
+    document.getElementById('check').innerHTML = "Correct!"
+    for (var i = 0; i < available_inds.length; i++){ 
+      if (available_inds[i] === current_question_num) { 
+        available_inds.splice(i, 1);
+        petr_move()
+      }
+    }
+  }
+  else {
+    document.getElementById('check').innerHTML = "Wrong >:("
+  }
+}
+
+function start_to_next_question() {
+  document.getElementById('start_button').innerHTML = `<button class="startbutton" onclick="display()">Next question</button>`
+  display()
+}
+
+function display() {
+  document.getElementById('check').innerHTML = "..."
+  if (available_inds.length == 0) {
+    document.getElementById('questions').innerHTML = "Congrats! You finished this practice set :D"
+  }
+  else {
+    let current_question_num = next_question();
+    document.getElementById('questions').innerHTML = `<div>
+    ${ICS33_questions[current_question_num].question}
+    <br></br>
+    <button class="answer_buttons" onclick="answer_button(${current_question_num}, 'a')">A</button> ${ICS33_questions[current_question_num].answers.a}
+    <br></br>
+    <button class="answer_buttons" onclick="answer_button(${current_question_num}, 'b')">B</button> ${ICS33_questions[current_question_num].answers.b}
+    <br></br>
+    <button class="answer_buttons" onclick="answer_button(${current_question_num}, 'c')">C</button> ${ICS33_questions[current_question_num].answers.c}
+    <br></br>
+    <button class="answer_buttons" onclick="answer_button(${current_question_num}, 'd')">D</button> ${ICS33_questions[current_question_num].answers.d}
+    </div>`
+  }
+}
+
+end = 10/(ICS33_questions.length+1) * screen.width;
+petr_pos = 0;
+
+function petr_move() {
+  petr = document.getElementById('petr')
+  petr_pos += 1/(ICS33_questions.length+1) * screen.width;
+  petr.style.transform = `translateX(${petr_pos}px)`
+}
+
+zotbot_pos = 0;
+function zotbot_move() {
+  zotbot = document.getElementById('zotbot')
+  zotbot_pos += 1/(ICS33_questions.length+1) * screen.width;
+  zotbot.style.transform = `translateX(${zotbot_pos}px)`
+}
+
+function computer_move() {
+  var i = 1;
+  while (i < 11) {
+    setTimeout(function() {zotbot_move()}, i * 5000);
+    i++;
+  }
+}

@@ -1,6 +1,7 @@
 <!--Make the Front Page look Pretty-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,18 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <!--
-    <style>
-        body {
-            background-image: url('https://t3.ftcdn.net/jpg/02/06/46/22/240_F_206462231_DUzD9soaRYZEntLyo5mRRPzCRqhAgITj.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            background-size: 100%;
-          }
-        </style>
-    -->
-        <script src="./cover.js"></script>
+    <script src="./cover.js"></script>
 </head>
 
 <body>
@@ -39,12 +29,13 @@
             <button class="setbutton" id="I&CSCI31" onclick="set_chosen(id); getCourse(id)">ICS31</button>
             <button class="setbutton" id="I&CSCI32" onclick="set_chosen(id); getCourse(id)">ICS32</button>
             <button class="setbutton" id="I&CSCI33" onclick="set_chosen(id); getCourse(id)">ICS33</button>
-            <button class="setbutton" id="CreateYourOwn" onclick="window.location.href='createyourown.html'">Create Your Own</button>
+            <button class="setbutton" id="CreateYourOwn" onclick="set_chosen(id); getCourse(id)">Create Your Own</button>
             <br></br>
         </div>
-        <div id="select_course">
+        <div id="select_course" style="font-family: 'Chewy', cursive;">
             Select a course :)
         </div>
+        <br></br>
         <div id="course_info"> </div>
         <div class="centerplay">
             <button class= "sectionbutton" id='zotracerinfo'onclick="window.location.href='#section2'">What is Zot Racer?</button>
@@ -56,39 +47,39 @@
         
         <div id="hook">
             <p>
-            <span id="orange">Finals suck, huh? </span> Studying is tedious and during the final weeks of the quarter, we are completely drained of all 
-            our motivation. Instead of paying attention during class, you are sit in the back of the lecture hall, hood up,
+            <span style="color:#668245">Finals suck, huh? </span> Studying is tedious and during the final weeks of the quarter, we are completely <span style="color:#668245">drained of all 
+            our motivation</span>. Instead of paying attention during class, you are sit in the back of the lecture hall, hood up,
             playing type racer with your friends to stay awake. I'm sure someone can relate haha. Rather than wasting time and
-            losing brain cells mindlessly typing, you can play our game Zot Racer instead! 
+            losing brain cells mindlessly typing, <span style="color:#668245">you can play our game Zot Racer instead!</span> 
             <br></br>
-            Zot Racer revamps studying and motivates students to finish the quarter strong. In the game, you, the lovely Anteater, are placed
-            head to head to our favorite Starship Zotbot! 
+            Zot Racer revamps studying and motivates students to <span style="color:#668245">finish the quarter strong.</span> In the game, you, the lovely Anteater, are placed
+            <span style="color:#668245">head to head</span> to our favorite Starship Zotbot! 
             </p>
         </div>
         <br></br>
-        <p id="about_info">
+        <div id="about_info">
+            <p style="font-size: 30px;">How to Play</p>
+            1. <span style="color:#498cb2">Select </span> a set of practice questions that you want to review, or create your own set. 
             <br></br>
-            To play, first select a set of practice questions that you want to review, or create your own set. After you 
-            selected your set, press the big "Play" button!
+            2. After you selected your set, <span style="color:#498cb2">press the big "Play" button!</span>
             <br></br>
-            At the top, you will see your avatar, Peter the Anteater, and the computer's avatar, the ZotBot, lined up on the left side of the screen. 
-            Press the start button to begin answering questions. 
-            A question will appear below the race track. Much like Type Racer, your avatar advances to the right with each 
-            correct answer. To get to the next question, click "New Question." 
+            3. Press the start button to begin answering questions. 
+            A question will appear below the race track. Much like Type Racer, your avatar <span style="color:#498cb2">advances with each 
+            correct answer.</span>
+            <br></br> 
+            4. After solving the question, <span style="color:#498cb2">click "New Question" </span>to receive the next one. 
             You can also skip to the next question by clicking "Next Question," but will eventually have to answer all questions
             from the set to finish the race.
             <br></br>
-            Try to get to the other side of the screen before the zotbot!
-            
+            <span style="color:#498cb2">Try to get to the other side of the screen before the zotbot!</span>
             <br></br>
-        </p>
+        </div>
         <br></br>
         <div class="centerplay">
             <button class= "sectionbutton" id="playbutton" onclick="window.location.href='#section1'">Let's Play!</button>
-        </div>    
+        </div>   
+        <p style="font: ducimain, helvectica; color:#668245; font-weight:bold;">Created by: TANK (Taylor Quach, Audrey Lam, Nicole Nguyen, Kristen Yee)</p> 
     </div>
-
-    
 
 </body>
 </html>

@@ -39,7 +39,7 @@ const ICS31_questions = [
     print(f"Hi my name is {name}!`,
     answers: {
       a: "hello(234)",
-      b: "hell0(['Kristen', 'Nicole'])",
+      b: "hello(['Kristen', 'Nicole'])",
       c: "hello('Audrey')c",
       d: "hello({'name': 'Taylor'})"
     },
@@ -142,44 +142,44 @@ function answer_button(current_question_num, user_answer) {
 }
 
 function start_to_next_question() {
-  document.getElementById('start_button').innerHTML = `<button onclick="display()">Next question</button>`
+  document.getElementById('start_button').innerHTML = `<button class="startbutton" onclick="display()">Next question</button>`
   display()
 }
 
 function display() {
   document.getElementById('check').innerHTML = "..."
-  if (petr_pos == end) {
+  if (available_inds.length == 0) {
     document.getElementById('questions').innerHTML = "Congrats! You finished this practice set :D"
   }
   else {
     let current_question_num = next_question();
-    document.getElementById('questions').innerHTML = `<div class="buttons" data-aos="fade-up" data-aos-duration="1200">
+    document.getElementById('questions').innerHTML = `<div>
     ${ICS31_questions[current_question_num].question}
     <br></br>
-    <button onclick="answer_button(${current_question_num}, 'a')">A</button> ${ICS31_questions[current_question_num].answers.a}
+    <button class="answer_buttons" onclick="answer_button(${current_question_num}, 'a')">A</button> ${ICS31_questions[current_question_num].answers.a}
     <br></br>
-    <button onclick="answer_button(${current_question_num}, 'b')">B</button> ${ICS31_questions[current_question_num].answers.b}
+    <button class="answer_buttons" onclick="answer_button(${current_question_num}, 'b')">B</button> ${ICS31_questions[current_question_num].answers.b}
     <br></br>
-    <button onclick="answer_button(${current_question_num}, 'c')">C</button> ${ICS31_questions[current_question_num].answers.c}
+    <button class="answer_buttons" onclick="answer_button(${current_question_num}, 'c')">C</button> ${ICS31_questions[current_question_num].answers.c}
     <br></br>
-    <button onclick="answer_button(${current_question_num}, 'd')">D</button> ${ICS31_questions[current_question_num].answers.d}
+    <button class="answer_buttons" onclick="answer_button(${current_question_num}, 'd')">D</button> ${ICS31_questions[current_question_num].answers.d}
     </div>`
   }
 }
 
-end = 10/(ICS31_questions.length+2) * screen.width;
+end = 10/(ICS31_questions.length+1) * screen.width;
 petr_pos = 0;
 
 function petr_move() {
   petr = document.getElementById('petr')
-  petr_pos += 1/(ICS31_questions.length+2) * screen.width;
+  petr_pos += 1/(ICS31_questions.length+1) * screen.width;
   petr.style.transform = `translateX(${petr_pos}px)`
 }
 
 zotbot_pos = 0;
 function zotbot_move() {
   zotbot = document.getElementById('zotbot')
-  zotbot_pos += 1/(ICS31_questions.length+2) * screen.width;
+  zotbot_pos += 1/(ICS31_questions.length+1) * screen.width;
   zotbot.style.transform = `translateX(${zotbot_pos}px)`
 }
 
@@ -189,13 +189,4 @@ function computer_move() {
     setTimeout(function() {zotbot_move()}, i * 5000);
     i++;
   }
-  setTimeout(function() {zotbot_finish()}, 50000);
-  if (petr_pos == end) {
-    document.getElementById('questions').innerHTML = "Congrats! You finished this practice set :D"
-  }
-}
-
-function zotbot_finish() {
-  document.getElementById('check').innerHTML = "..."
-  document.getElementById('questions').innerHTML = "The zotbot finished before you :("
 }
