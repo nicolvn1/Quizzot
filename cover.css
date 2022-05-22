@@ -166,7 +166,7 @@ html{
 #zotracerinfo{
     font: ducimain, helvectica;
     font-weight: bold; 
-    position: absolute;
+    /* position: absolute; */
     bottom:0;
 }
 

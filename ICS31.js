@@ -3,7 +3,7 @@ const ICS31_questions = [
     question: "What is the definition of a ValueError?",
     answers: {
       a: "The program contains invalid code that cannot be understood.",
-      b: "An invalid value is used - can occur if giving letters to int().c",
+      b: "An invalid value is used - can occur if giving letters to int().",
       c: "The program tries to use a variable that does not exist.",
       d: "An operation uses incorrect types - can occur if adding an integer to a string.",
     },
@@ -14,7 +14,7 @@ const ICS31_questions = [
     answers: {
       a: "[:-3]",
       b: "[1:]",
-      c: "[1:3:1]c",
+      c: "[1:3:1]",
       d: "[1:2]"
     },
     correctAnswer: "c"
@@ -25,7 +25,7 @@ const ICS31_questions = [
       a: "sample_dict.keys()",
       b: "sample_dict.values()",
       c: "sample_dict.tuple()",
-      d: "sample_dict.items()c"
+      d: "sample_dict.items()"
     },
     correctAnswer: "d"
   },
@@ -40,7 +40,7 @@ const ICS31_questions = [
     answers: {
       a: "hello(234)",
       b: "hello(['Kristen', 'Nicole'])",
-      c: "hello('Audrey')c",
+      c: "hello('Audrey')",
       d: "hello({'name': 'Taylor'})"
     },
     correctAnswer: "c"
@@ -50,7 +50,7 @@ const ICS31_questions = [
     answers: {
       a: "int('N1col3')",
       b: "float('3.1415s')",
-      c: "str(111)c",
+      c: "str(111)",
       d: "int('1')"
     },
     correctAnswer: "c"
@@ -58,7 +58,7 @@ const ICS31_questions = [
   {
     question: "Which command is NOT used to create a new string?",
     answers: {
-      a: "islower()c",
+      a: "islower()",
       b: "capitalize()",
       c: "strip()",
       d: "title()"
@@ -73,7 +73,7 @@ const ICS31_questions = [
     return x * y`,
     answers: {
       a: "assert product(1,2) == 2",
-      b: "assert product(3,3) == 6c",
+      b: "assert product(3,3) == 6",
       c: "assert product(6,5) == 30",
       d: "assert product(4,product(2,3)) == 24"
     },
@@ -91,7 +91,7 @@ const ICS31_questions = [
       a: "nl[2]",
       b: "nl[3][3]",
       c: "nl[-1][1]",
-      d: "nl[2][2]c"
+      d: "nl[2][2]"
     },
     correctAnswer: "d"
   },
@@ -99,7 +99,7 @@ const ICS31_questions = [
     question: "Which of these is NOT a list operation?",
     answers: {
       a: "len()",
-      b: "list.add(val)c",
+      b: "list.add(val)",
       c: "sum()",
       d: "max()"
     },
@@ -108,7 +108,7 @@ const ICS31_questions = [
   {
     question: "Which data type is not mutable?",
     answers: {
-      a: "A string.c",
+      a: "A string.",
       b: "A dictionary.",
       c: "A list.",
       d: "A set."
@@ -167,19 +167,17 @@ function display() {
   }
 }
 
-end = 10/(ICS31_questions.length+1) * screen.width;
 petr_pos = 0;
-
 function petr_move() {
   petr = document.getElementById('petr')
-  petr_pos += 1/(ICS31_questions.length+1) * screen.width;
+  petr_pos += 1/(ICS31_questions.length) * window.innerWidth - 15;
   petr.style.transform = `translateX(${petr_pos}px)`
 }
 
 zotbot_pos = 0;
 function zotbot_move() {
   zotbot = document.getElementById('zotbot')
-  zotbot_pos += 1/(ICS31_questions.length+1) * screen.width;
+  zotbot_pos += 1/(ICS31_questions.length) * window.innerWidth - 15;
   zotbot.style.transform = `translateX(${zotbot_pos}px)`
 }
 

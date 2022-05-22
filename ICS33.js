@@ -18,7 +18,7 @@ const ICS33_questions = [
         <br></br>
         if dictionary[key] % 2 == 0:
         <br></br>
-        one_liner.append(key)c
+        one_liner.append(key)
         `,
         c: `one_liner =[]
         <br></br>
@@ -44,7 +44,7 @@ const ICS33_questions = [
       answers: {
         a: "An iterable is an object you can call next() on and an iterator is an object that can be iterated over",
         b: "An iterator returns an iterable while an iterable returns a generator",
-        c: "An iterator is an object you can call next() on and an iterable is an object that can be iterated overc",
+        c: "An iterator is an object you can call next() on and an iterable is an object that can be iterated over",
         d: "An iterator returns a generator while an iterator returns an interable"
       },
       correctAnswer: "c"
@@ -57,7 +57,7 @@ const ICS33_questions = [
         a: "p_anteater@sbcglobal.net",
         b: "panteater@hotmail.com",
         c: "pant3at3r@gmail.com",
-        d: "panteater@uciedu.c"
+        d: "panteater@uciedu."
       },
       correctAnswer: "d"
     },
@@ -66,7 +66,7 @@ const ICS33_questions = [
       answers: {
         a: "x.next",
         b: "x.next()",
-        c: "x.next.nextc",
+        c: "x.next.next",
         d: "x.next.next()"
       },
       correctAnswer: "c"
@@ -76,7 +76,7 @@ const ICS33_questions = [
       answers: {
         a: "Famous Elephants Of Oakdale Pennsylvania",
         b: "Forestry Education Observation-Outreach Program",
-        c: "Fundamental Equation of Object-Oriented Programmingc",
+        c: "Fundamental Equation of Object-Oriented Programming",
         d: "Fail Everyone Out of Physics"
       },
       correctAnswer: "c"
@@ -85,7 +85,7 @@ const ICS33_questions = [
       question: "Which term is not included in LEGB ?",
       answers: {
         a: "Local",
-        b: "Errors.c",
+        b: "Errors",
         c: "Global",
         d: "Built-ins"
       },
@@ -95,7 +95,7 @@ const ICS33_questions = [
       question: "What method(s) does/do a class object need if it wants to be used by a context manager?",
       answers: {
         a: "__start__ and __exit__",
-        b: "__enter__ and __exit__c",
+        b: "__enter__ and __exit__",
         c: "__start__ and __finish__",
         d: "__enter__ and __finish__"
       },
@@ -107,7 +107,7 @@ const ICS33_questions = [
         a: "type(1).__le__(1,x)",
         b: "type(1).__ge__(1,x)",
         c: "type(x).__le__(x,1)",
-        d: "type(x).__ge__(x,1)c"
+        d: "type(x).__ge__(x,1)"
       },
       correctAnswer: "d"
     },
@@ -115,7 +115,7 @@ const ICS33_questions = [
       question: "What does any(()) evaluates to?",
       answers: {
         a: "True",
-        b: "Falsec",
+        b: "False",
         c: "Both a and b",
         d: "None of the above"
       },
@@ -127,7 +127,7 @@ const ICS33_questions = [
         a: "People still talking after class has begun.",
         b: "Thornton's pronunciation of Tkinter.",
         c: "Phones ringing during class.",
-        d: "All of the above.c"
+        d: "All of the above."
       },
       correctAnswer: "d"
     }

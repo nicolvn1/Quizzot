@@ -3,7 +3,7 @@ const ICS32_questions = [
       question: "What is the purpose of Tracebacks?",
       answers: {
         a: "It's used to annoy the programmer with unnecessary messages.",
-        b: "It's Python's way of showing the programmer why the program crashed.c",
+        b: "It's Python's way of showing the programmer why the program crashed.",
         c: "It's Python's way of telling the programmer that the program ran successfully.",
         d: "It's decorates the programmer's terminal.",
       },
@@ -14,7 +14,7 @@ const ICS32_questions = [
       answers: {
         a: "It executes when testing certain lines of code.",
         b: "It executes if an error occured when testing certain lines of code.",
-        c: "It executes regardless of whether code ran successfully or not.c",
+        c: "It executes regardless of whether code ran successfully or not.",
         d: "It executes if an error didn't occur when running code."
       },
       correctAnswer: "c"
@@ -25,7 +25,7 @@ const ICS32_questions = [
         a: "Create an instance.",
         b: "Defines methods and attributes that can be used in that Class.",
         c: "Creates an outline for creating an object.",
-        d: "All of the Above.c"
+        d: "All of the Above."
       },
       correctAnswer: "d"
     },
@@ -34,7 +34,7 @@ const ICS32_questions = [
       answers: {
         a: "local --> built-in --> enclosed --> global",
         b: "built-in --> enclosed --> local --> global",
-        c: "local --> enclosed --> global --> built-inc",
+        c: "local --> enclosed --> global --> built-in",
         d: "local --> global --> enclosed --> build-in"
       },
       correctAnswer: "c"
@@ -46,7 +46,7 @@ const ICS32_questions = [
       answers: {
         a: "1,2,4,3",
         b: "2,1,3,4",
-        c: "4,1,3,2c",
+        c: "4,1,3,2",
         d: "4,3,2,1"
       },
       correctAnswer: "c"
@@ -54,7 +54,7 @@ const ICS32_questions = [
     {
       question: "What happens in a recursive function?",
       answers: {
-        a: "A function call results in another call to the same function.c",
+        a: "A function call results in another call to the same function.",
         b: "A function call results in another call to a different function.",
         c: "A function call executes the code once and returns.",
         d: "A function call returns a reference to the inner function."
@@ -65,7 +65,7 @@ const ICS32_questions = [
       question: "What is a class called when it inherits from another class?",
       answers: {
         a: "Base class",
-        b: "Child classc",
+        b: "Child class",
         c: "Parent class",
         d: "Daughter class"
       },
@@ -80,7 +80,7 @@ const ICS32_questions = [
         a: "Base1",
         b: "Base1 and Base2",
         c: "Base2",
-        d: "Base.c"
+        d: "Base"
       },
       correctAnswer: "d"
     },
@@ -90,7 +90,7 @@ const ICS32_questions = [
         a: `Replacing the functionality of a method defined in the child class 
         with the definition from the base class.`,
         b: `Replacing the functionality of the method with the same definition
-         from the parent class in the child class.c`,
+         from the parent class in the child class.`,
         c: "Defining a new method with a different name in the child class.",
         d: "Defining a new method in the base class."
       },
