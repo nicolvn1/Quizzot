@@ -34,13 +34,18 @@
             <div class="cloud"></div>
         </div>
 
-        <h2>Choose a set to study:</h2>
         <div class="centerplay marginbutton">
             <!--choose set-->
-            <button class="setbutton" id="I&CSCI31" onclick="set_chosen(id)">ICS31</button>
-            <button class="setbutton" id="I&CSCI32" onclick="set_chosen(id)">ICS32</button>
-            <button class="setbutton" id="I&CSCI33" onclick="set_chosen(id)">ICS33</button>
+            <button class="setbutton" id="I&CSCI31" onclick="set_chosen(id); getCourse(id)">ICS31</button>
+            <button class="setbutton" id="I&CSCI32" onclick="set_chosen(id); getCourse(id)">ICS32</button>
+            <button class="setbutton" id="I&CSCI33" onclick="set_chosen(id); getCourse(id)">ICS33</button>
+            <button class="setbutton" id="CreateYourOwn" onclick="window.location.href='createyourown.html'">Create Your Own</button>
+            <br></br>
         </div>
+        <div id="select_course">
+            Select a course :)
+        </div>
+        <div id="course_info"> </div>
         <div class="centerplay">
             <button class= "sectionbutton" id='zotracerinfo'onclick="window.location.href='#section2'">What is Zot Racer?</button>
         </div>
@@ -48,16 +53,36 @@
 
     <div id="section2">
         <h1 class="title">About Zot Racer</h1>
-        <p>
-            Finals suck huh? Studying is tedious and during the final weeks of the quarter, we are completely drained of all 
+        
+        <div id="hook">
+            <p>
+            <span id="orange">Finals suck, huh? </span> Studying is tedious and during the final weeks of the quarter, we are completely drained of all 
             our motivation. Instead of paying attention during class, you are sit in the back of the lecture hall, hood up,
             playing type racer with your friends to stay awake. I'm sure someone can relate haha. Rather than wasting time and
             losing brain cells mindlessly typing, you can play our game Zot Racer instead! 
-
+            <br></br>
             Zot Racer revamps studying and motivates students to finish the quarter strong. In the game, you, the lovely Anteater, are placed
-            head to head to our favorite Starship Zotbot! To play, first select a set of practice questions Much like Type Racer, your avatar advances with each correct answer. For some friendly
-            competition, try to 
+            head to head to our favorite Starship Zotbot! 
+            </p>
+        </div>
+        <br></br>
+        <p id="about_info">
+            <br></br>
+            To play, first select a set of practice questions that you want to review, or create your own set. After you 
+            selected your set, press the big "Play" button!
+            <br></br>
+            At the top, you will see your avatar, Peter the Anteater, and the computer's avatar, the ZotBot, lined up on the left side of the screen. 
+            Press the start button to begin answering questions. 
+            A question will appear below the race track. Much like Type Racer, your avatar advances to the right with each 
+            correct answer. To get to the next question, click "New Question." 
+            You can also skip to the next question by clicking "Next Question," but will eventually have to answer all questions
+            from the set to finish the race.
+            <br></br>
+            Try to get to the other side of the screen before the zotbot!
+            
+            <br></br>
         </p>
+        <br></br>
         <div class="centerplay">
             <button class= "sectionbutton" id="playbutton" onclick="window.location.href='#section1'">Let's Play!</button>
         </div>    

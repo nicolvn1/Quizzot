@@ -141,53 +141,46 @@ function answer_button(current_question_num, user_answer) {
   }
 }
 
-function handle_correct(set, question_ind) {
-    //or this whole function doesn't even need to exist and we can just delete in an if statement
-    delete available_inds[question_ind];
-    //call the move forward function
-}
-
-function handle_incorrect() {
-    pass
-}
-
-function start_to_give_question() {
-  document.getElementById('start_button').innerHTML = `<button onclick="display()">Give question</button>`
+function start_to_next_question() {
+  document.getElementById('start_button').innerHTML = `<button onclick="display()">Next question</button>`
+  display()
 }
 
 function display() {
   document.getElementById('check').innerHTML = "..."
-  // finish();
-  let current_question_num = next_question();
-  document.getElementById('questions').innerHTML = `<div class="buttons" data-aos="fade-up" data-aos-duration="1200">
-  ${ICS31_questions[current_question_num].question}
-  <br></br>
-  <button onclick="answer_button(${current_question_num}, 'a')">A</button> ${ICS31_questions[current_question_num].answers.a}
-  <br></br>
-  <button onclick="answer_button(${current_question_num}, 'b')">B</button> ${ICS31_questions[current_question_num].answers.b}
-  <br></br>
-  <button onclick="answer_button(${current_question_num}, 'c')">C</button> ${ICS31_questions[current_question_num].answers.c}
-  <br></br>
-  <button onclick="answer_button(${current_question_num}, 'd')">D</button> ${ICS31_questions[current_question_num].answers.d}
-  </div>`
+  if (petr_pos == end) {
+    document.getElementById('questions').innerHTML = "Congrats! You finished this practice set :D"
+  }
+  else {
+    let current_question_num = next_question();
+    document.getElementById('questions').innerHTML = `<div class="buttons" data-aos="fade-up" data-aos-duration="1200">
+    ${ICS31_questions[current_question_num].question}
+    <br></br>
+    <button onclick="answer_button(${current_question_num}, 'a')">A</button> ${ICS31_questions[current_question_num].answers.a}
+    <br></br>
+    <button onclick="answer_button(${current_question_num}, 'b')">B</button> ${ICS31_questions[current_question_num].answers.b}
+    <br></br>
+    <button onclick="answer_button(${current_question_num}, 'c')">C</button> ${ICS31_questions[current_question_num].answers.c}
+    <br></br>
+    <button onclick="answer_button(${current_question_num}, 'd')">D</button> ${ICS31_questions[current_question_num].answers.d}
+    </div>`
+  }
 }
 
+end = 10/(ICS31_questions.length+2) * screen.width;
 petr_pos = 0;
 
 function petr_move() {
   petr = document.getElementById('petr')
   petr_pos += 1/(ICS31_questions.length+2) * screen.width;
-  if (!petr.style.left) {
-    petr.style.transform = `translateX(${petr_pos}px)`
-  }
+  petr.style.transform = `translateX(${petr_pos}px)`
 }
 
 zotbot_pos = 0;
 function zotbot_move() {
   zotbot = document.getElementById('zotbot')
   zotbot_pos += 1/(ICS31_questions.length+2) * screen.width;
-  if (!zotbot.style.left) {
-    zotbot.style.transform = `translateX(${zotbot_pos}px)`
+  zotbot.style.transform = `translateX(${zotbot_pos}px)`
 }
 
 function computer_move() {
@@ -196,16 +189,13 @@ function computer_move() {
     setTimeout(function() {zotbot_move()}, i * 5000);
     i++;
   }
+  setTimeout(function() {zotbot_finish()}, 50000);
+  if (petr_pos == end) {
+    document.getElementById('questions').innerHTML = "Congrats! You finished this practice set :D"
+  }
 }
 
-end = 10/(ICS31_questions.length+2) * screen.width;
-// function finish() {
-//   if (petr_pos == end) {
-//     document.getElementById('questions').innerHTML = "Congrats! You finished this practice set :D"
-//   }
-//   if (zotbot_pos == end) {
-//     document.getElementById('questions').innerHTML = "The zotbot finished before you :("
-//   }
-// }
-
+function zotbot_finish() {
+  document.getElementById('check').innerHTML = "..."
+  document.getElementById('questions').innerHTML = "The zotbot finished before you :("
 }

@@ -1,3 +1,11 @@
+.ICS31title {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Chewy', cursive;
+  color: #705a0f
+}
+
 .zotbotimage {
     height:150px;
     display:block;
@@ -10,6 +18,38 @@
   transition: transform 1000ms 300ms;
 }
 
+.startbutton {
+  margin-top: 5px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 15px;
+  background-color: #cce5e7; /* rgb(214, 235, 221) */
+  border: none;
+  color: white;
+  padding: 15px 50px;
+  text-align: center;
+  display: inline-block;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  vertical-align:center;
+  z-index: 3;
+}
+
+.you {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Chewy', cursive;
+  color: #705a0f
+}
+
+.comp {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Chewy', cursive;
+  color: #705a0f
+}
+
 #road{
   height: 450px;
   background-image: url('images/road_to_race_cropped.jpg');
@@ -20,3 +60,7 @@
   padding: 10;
 }
 
+#bottom{
+  height:800px;
+  background-color: beige;
+}

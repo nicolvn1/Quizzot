@@ -1,5 +1,5 @@
 .cover_button {
-    margin-top: 90px;
+    margin-top: 80px;
     font-size: 75px;
     border-radius: 50px;
     background-color: #b8e4bc; /* b8e4bc */
@@ -42,14 +42,14 @@
 }
 
 .setbutton {
-    margin-top: 50px;
+    margin-top: 5px;
     margin: 10px;
     font-size: 20px;
     border-radius: 15px;
     background-color: #cce5e7; /* rgb(214, 235, 221) */
     border: none;
     color: white;
-    padding: 25px 50px;
+    padding: 15px 50px;
     text-align: center;
     display: inline-block;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -57,12 +57,23 @@
     z-index: 3;
 }
 
+#select_course {
+    text-align: center;
+}
+
+#course_info {
+    font: 14px arial, sans-serif;
+   
+}
+
+    
 
 .title {
     padding-top: 50px;
     text-align:center;
     font-size: 50px;
     font-family: 'Chewy', cursive;
+    color: #705a0f
 }
 
 
@@ -100,7 +111,7 @@ border-radius:100px;
     display: flex;
     justify-content: center;
     z-index: 2;
-    margin-top: 90px;
+    margin-top: 40px;
 }
 
 #section1{
@@ -157,6 +168,28 @@ html{
 }
 
 .marginbutton{
-    margin-top: 125px;
+    margin-top: 30px;
     margin-right: 10px;
 }
+
+#hook {
+    text-align: center;
+    margin: auto;
+    width: 1000px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(193, 219, 221); /* rgb(214, 235, 221) */
+}
+
+#about_info {
+    text-align: center;
+    margin: auto;
+    width: 1000px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(193, 219, 221); /* rgb(214, 235, 221) */
+}
+
+#orange{
+    color: orange;
+  }
