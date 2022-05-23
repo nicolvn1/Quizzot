@@ -89,7 +89,7 @@ const ICS33_questions = [
         c: "Global",
         d: "Built-ins"
       },
-      correctAnswer: "c"
+      correctAnswer: "b"
     },
     {
       question: "What method(s) does/do a class object need if it wants to be used by a context manager?",
@@ -184,19 +184,17 @@ function display() {
   }
 }
 
-end = 10/(ICS33_questions.length+1) * screen.width;
 petr_pos = 0;
-
 function petr_move() {
   petr = document.getElementById('petr')
-  petr_pos += 1/(ICS33_questions.length+1) * screen.width;
+  petr_pos += 1/(ICS33_questions.length) * window.innerWidth - 15;
   petr.style.transform = `translateX(${petr_pos}px)`
 }
 
 zotbot_pos = 0;
 function zotbot_move() {
   zotbot = document.getElementById('zotbot')
-  zotbot_pos += 1/(ICS33_questions.length+1) * screen.width;
+  zotbot_pos += 1/(ICS33_questions.length) * window.innerWidth - 15;
   zotbot.style.transform = `translateX(${zotbot_pos}px)`
 }
 
